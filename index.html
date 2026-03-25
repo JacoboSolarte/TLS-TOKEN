@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chompi App</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      padding: 12px 25px;
+      border-radius: 8px;
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .hero img {
+      width: 400px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .features {
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .features h2 {
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      width: 250px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+
+    @media(max-width: 900px){
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 30px;
+        width: 250px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chompi 🚀</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Tu plataforma inteligente</h2>
+      <p>Conecta, gestiona y escala tu aplicación de manera rápida y segura en la nube.</p>
+      <a href="#" class="btn">Comenzar</a>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="app">
+  </section>
+
+  <section class="features">
+    <h2>Características</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>⚡ Rápido</h3>
+        <p>Optimizado para alto rendimiento.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔒 Seguro</h3>
+        <p>Protección con HTTPS y buenas prácticas.</p>
+      </div>
+
+      <div class="card">
+        <h3>☁️ Escalable</h3>
+        <p>Listo para crecer contigo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Chompi - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
